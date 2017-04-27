@@ -80,6 +80,19 @@ function leastCommonMultiple2(num1,num2) {
     }
 }
 
+//More explicit version
+// leastCommonMultiple(6, 10) => 30 // 30 % 6 === 0 && 30 % 10 === 0
+//from that we can generalize to get...
+function leastCommonMultiple3(num1, num2) {
+    // let num = 0; this forces the loop to return 0 no matter what
+    let num = 1;
+    while (true) {
+        if (num % num1 === 0 && num % num2 === 0) {// ...this condition
+            return num
+        }
+        num ++;
+    }
+}
 
 Examples:
 console.log(leastCommonMultiple2(2, 3));

@@ -110,3 +110,6 @@ console.log(randomNumberGenerator(100, 100)); //=> 175
 console.log("Testing the outputs below");
 console.log(randomNumberGenerator(30, 1)); //=> 30
 console.log(randomNumberGenerator(30, 1)); //=> 31
+
+
+console.log(Date);
